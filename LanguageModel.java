@@ -88,7 +88,7 @@ public class LanguageModel {
         for (int i = 0; i < probs.getSize(); i++) 
         {
             CharData cd = probs.get(i);
-            if (cd.cp>r)
+            if (cd.cp >= r)
                 return cd.chr;
         }
         if (probs.getSize() > 0) 
