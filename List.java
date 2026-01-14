@@ -39,7 +39,7 @@ public class List {
     
     /** GIVE Textual representation of this list. */
     public String toString() {
-        String s = "";
+        String s = "(";
 
         Node temp = first;
         while (temp!=null)
@@ -51,6 +51,8 @@ public class List {
             }
             temp = temp.next;
         }
+
+        s += ")";
         return s;
     }
 
